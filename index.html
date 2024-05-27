@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Minecraft Ore UI Web</title>
+		<link rel="stylesheet" href="assets/stylesheets/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" type="image/png" sizes="200x200" href="assets/icons/appicon.png">
+		<link rel="apple-touch-icon" type="image/png" sizes="200x200" href="assets/icons/appicon.png">
+		<link rel="icon" type="image/x-icon" sizes="16x16 24x24 32x32 48x48 64x64 72x72 80x80 96x96 128x128 256x256" href="assets/icons/favicon.ico">
+		<link rel="apple-touch-icon" type="image/x-icon" sizes="24x24 32x32 48x48 64x64 72x72 80x80 96x96 128x128 256x256" href="assets/icons/favicon.ico">
+	</head>
+
+
+	<body>
+
+		<loader>
+			<content>
+				<img src="assets/images/animation-074ed.gif" alt="Loading..." width="32px" draggable="false">
+			</content>
+		</loader>
+
+		<header>
+			<button id="sidebar" class="icon sidebar" onclick="main.sidebar();" tooltip="Sidebar / 侧栏">
+				<img draggable="false" src="assets/images/menu.png" type="image/png">
+			</button>
+			<span id="title">
+				<img draggable="false" src="assets/icons/appicon.png" type="image/png"><h1 class="title">Minecraft Ore UI</h1>
+			</span>
+			<button class="icon " onclick="" tooltip=""></button>
+		</header>
+
+		<mask style="opacity: 0;"></mask>
+
+		<sider>
+			<div>
+				<img src="assets/images/empty-state-art-461d2.png" draggable="false">
+				<a class="disabled" href="#disabled">Still in development...</a>
+				<a class="disabled" href="#disabled">施工中...</a>
+			</div><div>
+				Contributors / 贡献者:
+				<img src="https://contrib.rocks/image?repo=XiaozhiSans/ore-ui-web" draggable="false" width="64px"><br>
+			</div><div>
+				<button class="normal link" onclick="playSound(sounds.click); window.open('https://github.com/XiaozhiSans/ore-ui-web');" tooltip="查看源代码/贡献">GitHub</button>
+			</div><div>
+				<span style="display: inline; font-family: 'Minecraft Ten';">Minecraft</span> is 
+			</div>
+		</sider>
+
+		<main>
+			<div class="banner box">
+				This is a simple test page<br>
+				这只是个简单的测试页
+			</div>
+			<div class="box center">
+				Not an official Minecraft website. We are not associated with Mojang or Microsoft.<br>
+				本站非Minecraft官方网站，与Mojang和微软无从属关系。
+			</div>
+			<div class="box center"><p>
+				Minecraft is a 3D sandbox adventure game developed by Mojang Studios<br>
+				where players can interact with a fully customizable three-dimensional world made of blocks and entities.<br>
+				Its diverse gameplay options allow players to choose the way they play, creating countless possibilities.<br></p>
+				<span style="display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				flex-direction: row-reverse;"><p>
+				Minecraft（《我的世界》）是由Mojang Studios开发的一款3D沙盒电子游戏。<br>
+				玩家可在游戏中无拘无束地在3个维度内与由方块和实体构成的世界互动。<br>
+				多种玩法可供玩家选择，带来无限可能。</p>
+				<img src="https://zh.minecraft.wiki/images/thumb/Make_Stuff_icon_%28MCE%29.png/75px-Make_Stuff_icon_%28MCE%29.png?edf6f"></span>
+				<i style="text-align: right !important;">-- <a href="https://minecraft.wiki">Minecraft Wiki</a></i>
+			</div>
+			<div class="box flex">
+				<button class="normal" onclick="playSound(sounds.click);" tooltip="按钮">Button</button>
+				<button class="normal disabled" tooltip="被禁用的按钮">Disabled Button</button>
+				<button class="normal link" onclick="playSound(sounds.click);" tooltip="按钮">Button With Link</button>
+				<button class="normal yellow" onclick="playSound(sounds.click);" tooltip="按钮">Yellow Button</button>
+				<button class="normal dark" onclick="playSound(sounds.click);" tooltip="按钮">Dark Button</button>
+				<button class="normal dark link" onclick="playSound(sounds.click);" tooltip="按钮">Dark Link Button</button>
+				<button class="normal skyblue" onclick="playSound(sounds.click);" tooltip="按钮">Skyblue Button</button>
+				<button class="normal red" onclick="playSound(sounds.click);" tooltip="按钮">Red Button</button>
+				<button class="normal green" onclick="playSound(sounds.click);" tooltip="按钮">Green Button</button>
+				<button class="normal blue" onclick="playSound(sounds.click);" tooltip="按钮">Blue Button</button>
+			</div>
+			<div class="box center flex">
+				<span><img src="error" draggable="false" alt="error image" onerror="this.src = 'assets/images/error-1ee9c.png';"><br>
+				Error Image / 加载出错的图片</span>
+				<span><img src="assets/images/emptyStatesNoProgress-02663.png" alt="little fox is sleeping"><br>
+				Little fox is sleeping / 睡觉的小狐狸</span>
+			</div>
+
+			<info><br></info>
+			<info>Version: 20240527</info>
+			<info>Main Developer: XiaozhiSans</info>
+			<info>Last Update: 2024/05/27</info>
+		</main>
+
+		<script defer type="text/javascript" src="assets/scripts/sounds.js"></script>
+		<script defer type="text/javascript" src="assets/scripts/main.js"></script>
+	</body>
+
+</html>
