@@ -1,4 +1,4 @@
-<div style="text-align: right;">
+<div align="right">
 
 [简体中文](README-sch.md) | English
 
@@ -6,13 +6,13 @@
 
 </div>
 
-<div style="text-align: center;">
+<div align="center">
 
 # ore-ui-web
 a oreui's simple web implementation
 
-![License](https://img.shields.io/github/license/XiaozhiSans/ore-ui-web
-) ![stars](https://img.shields.io/github/stars/XiaozhiSans/ore-ui-web?deeppink)
+[![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-defalut?style=social&logo=creativecommons
+)](https://creativecommons.org/licenses/by-nc-sa/4.0/) ![repo size](https://img.shields.io/github/repo-size/XiaozhiSans/ore-ui-web?style=social&logo=github) ![stars](https://img.shields.io/github/stars/XiaozhiSans/ore-ui-web) ![tag](https://img.shields.io/github/v/tag/XiaozhiSans/ore-ui-web?include_prereleases&sort=date&style=social&logo=github) [![jsdelivr](https://img.shields.io/jsdelivr/gh/hm/XiaozhiSans/ore-ui-web?style=social&logo=jsdelivr)](https://www.jsdelivr.com/package/gh/XiaozhiSans/ore-ui-web)
 
 </div>
 
