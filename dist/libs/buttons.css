@@ -1,0 +1,123 @@
+button {
+	cursor: pointer;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+button.cube {
+	font-size: 20px;
+	margin-top: 2px;
+	cursor: auto;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: unset;
+	border: none;
+}
+button.cube:is(:hover, :focus) {
+	background-color: #48494a;
+	box-shadow: 0 -1px 0 0 #464647, inset 0 1px 0 0 #5a5b5c;
+}
+button.icon {
+	background-color: unset;
+	border: none;
+	width: 45px;
+	height: 100%;
+}
+button.icon:is(:hover, :focus) {
+	background-color: #f6f6f6;
+	cursor: pointer;
+}
+button.icon>img, header img {
+	width: 32px;
+	height: 32px;
+}
+button.disabled {
+	color: #484848 !important;
+	background-color: #d0d1d4 !important;
+	border: 2px solid #8c8d90 !important;
+	box-shadow: inset 0 -4px #b2b2b2 !important;
+	pointer-events: none !important;
+}
+button.normal {
+	width: 240px;
+	height: 40px;
+	font-size: 20px;
+	background-color: #d0d1d4;
+	border: 2px solid #1e1e1f;
+	box-shadow: inset 0 -4px #58585a, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.link::before {
+	margin-left: 2px;
+	content: url(../../assets/images/externalLink-1fa23.png);
+	width: 10px;
+	height: 10px;
+}
+button.normal:is(:hover, :focus) {
+	background-color: #b2b2b2;
+	box-shadow: inset 0 -4px #585858, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal:active {
+	margin-top: 4px;
+	height: 36px;
+	padding-bottom: 2px;
+	box-shadow: inset 3px 3px #fffc, inset -3px -3px #fff3;
+}
+button.normal.blue {
+	color: #fff;
+	background-color: #7345e5;
+	box-shadow: inset 0 -4px #4a1cac, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.blue:is(:hover, :focus) {
+	background-color: #5d2cc6;
+	box-shadow: inset 0 -4px #4a1cac, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.dark {
+	color: #fff;
+	background-color: #242222;
+	box-shadow: inset 0 -4px #000, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.dark.link::before {
+	margin-left: 2px;
+	content: url(../../assets/images/externalLink-0e493.png);
+	width: 10px;
+	height: 10px;
+}
+button.normal.dark:is(:hover, :focus) {
+	background-color: #3c3c3c;
+	box-shadow: inset 0 -4px #242222, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.green {
+	background-color: #3c8527;
+	box-shadow: inset 0 -4px #1d4d13, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.green:is(:hover, :focus) {
+	background-color: #2a641c;
+	box-shadow: inset 0 -4px #1d4d13, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.red {
+	background-color: #c63636;
+	box-shadow: inset 0 -4px #585858, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.red:is(:hover, :focus) {
+	background-color: #1d4d14;
+	box-shadow: inset 0 -4px #ad1d1d, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.skyblue {
+	background-color: #00bfff;
+	box-shadow: inset 0 -4px #06abe2, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.skyblue:is(:hover, :focus) {
+	background-color: #57d5ff;
+	box-shadow: inset 0 -4px #1fa5d1, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.yellow {
+	background-color: #dada10;
+	box-shadow: inset 0 -4px #a8a845, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}
+button.normal.yellow:is(:hover, :focus) {
+	background-color: #a0a014;
+	box-shadow: inset 0 -4px #8b8b32, inset 3px 3px #fff3, inset -3px -7px #ffffff1a;
+}

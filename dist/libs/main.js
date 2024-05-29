@@ -1,4 +1,4 @@
-const main = {
+export const main = {
 	closeSider: () => {
 		playSound(sounds.hide);
 		document.querySelector("sider").style.cssText = "/* width: 0; opacity: 0; */ left: calc(-100vw);";
@@ -15,5 +15,3 @@ const main = {
 		
 	}
 }
-
-document.querySelector("loader").style.cssText = "opacity: 0; pointer-events: none;";

@@ -1,0 +1,145 @@
+* {
+	font-family: Mojangles, "Noto Sans SC";
+}
+.banner {
+	padding: 8px;
+	background-color: #000;
+	text-align: center;
+}
+.box {
+	padding: 16px;
+	border-top: 2px solid #5b5b5b;
+	border-bottom: 2px solid #333;
+}
+.center {
+	text-align: center;
+}
+.disabled {
+	color: grey;
+	pointer-events: none;
+}
+.flex {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+[tooltip]::after {
+	display: block;
+	margin-top: 12px;
+	user-select: none;
+	position: absolute;
+	pointer-events: none;
+	content: attr(tooltip);
+	padding: 8px;
+	color: #fff;
+	background-color: #000;
+	font-size: 18px;
+	opacity: 0;
+	transition: 0.65s;
+}
+[tooltip]:hover::after {
+	opacity: 0.8;
+}
+a {
+	color: #00bfff;
+	text-decoration: none;
+}
+a:not(.disabled)::after {
+	margin-left: 4px;
+	content: url(../../assets/images/externalLink-0e493.png);
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+a:hover:not(.disabled) {
+	text-decoration: 2px solid underline;
+}
+body {
+	color: #fff;
+	font-size: 20px;
+	background-color: #48494a;
+	overflow: hidden;
+}
+h1.title {
+	font-family: "Minecraft Ten", "Noto Sans SC";
+	font-weight: bold;
+	font-size: 30px;
+}
+header {
+	border-bottom: 4px solid #b1b2b5;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: calc(100vw);
+	height: 40px;
+	color: #000;
+	background-color: #e6e8eb;
+	z-index: 10;
+}
+info {
+	display: block;
+	padding-left: 10px;
+	font-family: "Noto Sans SC";
+	font-size: 12px;
+	color: #fff6;
+}
+loader {
+	opacity: 0;
+	pointer-events: none;
+}
+
+main {
+	height: calc(100vh - 46px);
+	top: 40px;
+	position: fixed;
+	margin-left: -10px;
+	width: calc(100vw);
+	scroll-behavior: smooth;
+	overflow-y: auto;
+}
+main::-webkit-scrollbar {
+	display: block;
+	width: 14px;
+}
+main::-webkit-scrollbar-track {
+	background-color: #58585a;
+	border: 5px solid #48484a;
+}
+main::-webkit-scrollbar-thumb {
+	background-color: #e6e8eb;
+	border: 2px solid #000;
+	box-shadow: inset 0 -4px #58585a, inset 0 -7px #fafafa, inset 3px 3px #fafafa, inset -3px 0 #fafafa;
+}
+mask {
+	position: fixed;
+	pointer-events: none;
+	top: 0;
+	left: 0;
+	width: calc(100vw);
+	height: calc(100vh);
+	background-color: #000000b3;
+	transition: 1.2s;
+	z-index: 1;
+}
+
+sider {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #313233;
+	/* width: 0;
+	opacity: 0; */
+	height: calc(100vh - 46px);
+	position: fixed;
+	top: 46px;
+	/* left: 0; */
+	left: calc(-100vw);
+	z-index: 2;
+	/* pointer-events: none; */
+	transition: 0.8s;
+}

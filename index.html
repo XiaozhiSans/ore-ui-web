@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Minecraft Ore UI Web</title>
-		<link rel="stylesheet" href="assets/stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="./dist/preload.css">
+		<script type="module" src="./dist/init.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="icon" type="image/png" sizes="200x200" href="assets/icons/appicon.png">
 		<link rel="apple-touch-icon" type="image/png" sizes="200x200" href="assets/icons/appicon.png">
@@ -24,27 +25,26 @@
 			<button id="sidebar" class="icon sidebar" onclick="main.sidebar();" tooltip="Sidebar / 侧栏">
 				<img draggable="false" src="assets/images/menu.png" type="image/png">
 			</button>
-			<span id="title">
-				<img draggable="false" src="assets/icons/appicon.png" type="image/png"><h1 class="title">Minecraft Ore UI</h1>
-			</span>
+			<h1 class="title">Minecraft Ore UI</h1>
 			<button class="icon " onclick="" tooltip=""></button>
 		</header>
 
 		<mask style="opacity: 0;"></mask>
 
 		<sider>
-			<div>
+			<button class="normal link" onclick="playSound(sounds.click); window.open('https://github.com/XiaozhiSans/ore-ui-web');" tooltip="查看源代码/贡献">GitHub Repo</button>
+			<button class="cube">
 				<img src="assets/images/empty-state-art-461d2.png" draggable="false">
 				<a class="disabled" href="#disabled">Still in development...</a>
 				<a class="disabled" href="#disabled">施工中...</a>
-			</div><div>
+			</button>
+			<button class="cube">
 				Contributors / 贡献者:
 				<img src="https://contrib.rocks/image?repo=XiaozhiSans/ore-ui-web" draggable="false" width="64px"><br>
-			</div><div>
-				<button class="normal link" onclick="playSound(sounds.click); window.open('https://github.com/XiaozhiSans/ore-ui-web');" tooltip="查看源代码/贡献">GitHub</button>
-			</div><div>
+			</button>
+			<button class="cube">
 				<span style="display: inline; font-family: 'Minecraft Ten';">Minecraft</span> is 
-			</div>
+			</button>
 		</sider>
 
 		<main>
@@ -88,15 +88,16 @@
 				<span><img src="assets/images/emptyStatesNoProgress-02663.png" alt="little fox is sleeping"><br>
 				Little fox is sleeping / 睡觉的小狐狸</span>
 			</div>
+			<div class="box flex">
+				<input type="text" placeholder="Input test / 输入栏测试">
+			</div>
 
 			<info><br></info>
-			<info>Version: 20240527</info>
-			<info>Main Developer: XiaozhiSans</info>
-			<info>Last Update: 2024/05/27</info>
+			<info>Version: <span version>Loading...</span></info>
+			<info>Main Developer: <span>XiaozhiSans</span></info>
+			<info>Last Update: <span update>Loading...</span></info>
 		</main>
 
-		<script defer type="text/javascript" src="assets/scripts/sounds.js"></script>
-		<script defer type="text/javascript" src="assets/scripts/main.js"></script>
 	</body>
 
 </html>
