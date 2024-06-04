@@ -1,0 +1,16 @@
+.-img {
+	display: block;
+	background-image: url();
+	background-size: cover;
+}
+
+.-img.-error {
+	width: 260px;
+	height: 90px;
+	background-image: url(../res/error-1ee9c.png);
+}
+.-img.-indev {
+	width: 260px;
+	height: 128px;
+	background-image: url(../res/empty-state-art-461d2.png);
+}

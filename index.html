@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Minecraft Ore UI Web</title>
 		<link rel="stylesheet" type="text/css" href="./dist/preload.css">
-		<script type="module" src="./dist/init.js"></script>
+		<script type="module" src="./dist/all.init.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="icon" type="image/png" sizes="200x200" href="assets/icons/appicon.png">
 		<link rel="apple-touch-icon" type="image/png" sizes="200x200" href="assets/icons/appicon.png">
@@ -16,14 +16,12 @@
 	<body>
 
 		<loader>
-			<content>
-				<img src="assets/images/animation-074ed.gif" alt="Loading..." width="32px" draggable="false">
-			</content>
+			<i class="-icon -loading"></i>
 		</loader>
 
 		<header>
-			<button id="sidebar" class="icon sidebar" onclick="main.sidebar();" tooltip="Sidebar / 侧栏">
-				<img draggable="false" src="assets/images/menu.png" type="image/png">
+			<button id="sidebar" class="icon sidebar" onclick="oreui.main.sidebar();" tooltip="Sidebar / 侧栏">
+				<i class="-icon -menu"></i>
 			</button>
 			<h1 class="title">Minecraft Ore UI</h1>
 			<button class="icon " onclick="" tooltip=""></button>
@@ -32,9 +30,9 @@
 		<mask style="opacity: 0;"></mask>
 
 		<sider>
-			<button class="normal link" onclick="playSound(sounds.click); window.open('https://github.com/XiaozhiSans/ore-ui-web');" tooltip="查看源代码/贡献">GitHub Repo</button>
+			<button class="normal link" onclick="window.open('https://github.com/XiaozhiSans/ore-ui-web');" tooltip="查看源代码/贡献">GitHub Repo</button>
 			<button class="cube">
-				<img src="assets/images/empty-state-art-461d2.png" draggable="false">
+				<i class="-img -indev"></i>
 				<a class="disabled" href="#disabled">Still in development...</a>
 				<a class="disabled" href="#disabled">施工中...</a>
 			</button>
@@ -71,31 +69,45 @@
 				<i style="text-align: right !important;">-- <a href="https://minecraft.wiki">Minecraft Wiki</a></i>
 			</div>
 			<div class="box flex">
-				<button class="normal" onclick="playSound(sounds.click);" tooltip="按钮">Button</button>
+				<button class="normal" onclick="" tooltip="按钮">Button</button>
 				<button class="normal disabled" tooltip="被禁用的按钮">Disabled Button</button>
-				<button class="normal link" onclick="playSound(sounds.click);" tooltip="按钮">Button With Link</button>
-				<button class="normal yellow" onclick="playSound(sounds.click);" tooltip="按钮">Yellow Button</button>
-				<button class="normal dark" onclick="playSound(sounds.click);" tooltip="按钮">Dark Button</button>
-				<button class="normal dark link" onclick="playSound(sounds.click);" tooltip="按钮">Dark Link Button</button>
-				<button class="normal skyblue" onclick="playSound(sounds.click);" tooltip="按钮">Skyblue Button</button>
-				<button class="normal red" onclick="playSound(sounds.click);" tooltip="按钮">Red Button</button>
-				<button class="normal green" onclick="playSound(sounds.click);" tooltip="按钮">Green Button</button>
-				<button class="normal blue" onclick="playSound(sounds.click);" tooltip="按钮">Blue Button</button>
-			</div>
-			<div class="box center flex">
-				<span><img src="error" draggable="false" alt="error image" onerror="this.src = 'assets/images/error-1ee9c.png';"><br>
-				Error Image / 加载出错的图片</span>
-				<span><img src="assets/images/emptyStatesNoProgress-02663.png" alt="little fox is sleeping"><br>
-				Little fox is sleeping / 睡觉的小狐狸</span>
+				<button class="normal link" onclick="" tooltip="按钮">Button With Link</button>
+				<button class="normal yellow" onclick="" tooltip="按钮">Yellow Button</button>
+				<button class="normal dark" onclick="" tooltip="按钮">Dark Button</button>
+				<button class="normal dark link" onclick="" tooltip="按钮">Dark Link Button</button>
+				<button class="normal skyblue" onclick="" tooltip="按钮">Skyblue Button</button>
+				<button class="normal red" onclick="" tooltip="按钮">Red Button</button>
+				<button class="normal green" onclick="" tooltip="按钮">Green Button</button>
+				<button class="normal blue" onclick="" tooltip="按钮">Blue Button</button>
 			</div>
 			<div class="box flex">
-				<input type="text" placeholder="Input test / 输入栏测试">
+				<span style="display: flex; flex-direction: row;">
+				<button class="icon -icon -copy"></button>
+				<button class="icon -icon -clip"></button>
+				</span>
+				<info>icon buttons test</info>
+			</div>
+			<!-- 下次再更( <div class="box flex">
+				<input type="radio" value="0" name="num"> 0
+				<input type="radio" value="1" name="num"> 1
+				<input type="radio" value="2" name="num"> 2
+				<input type="radio" value="3" name="num"> 3
+				<input type="radio" value="4" name="num"> 4
+			</div> -->
+			<div class="box flex">
+				<input type="text" placeholder="Input test / 输入栏测试" style="width: calc(100vw);">
+			</div>
+			<div class="box flex">
+				<textarea></textarea>
+			</div>
+			<div class="box flex">
+				<div contenteditable></div>
 			</div>
 
 			<info><br></info>
-			<info>Version: <span version>Loading...</span></info>
+			<info>Version: <span>20240604</span></info>
 			<info>Main Developer: <span>XiaozhiSans</span></info>
-			<info>Last Update: <span update>Loading...</span></info>
+			<info>Last Update: <span>2024/06/04</span></info>
 		</main>
 
 	</body>

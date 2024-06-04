@@ -1,0 +1,36 @@
+.-icon {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background-image: url();
+	background-size: cover;
+}
+
+.-icon.-loading {
+	background-image: url(../res/animation-074ed.gif);
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
+
+.-icon.-copy {
+	background-image: url(../res/Copy-9b6af.png);
+}
+.-icon.-clip {
+	background-image: url(../res/Clipboard-bbbc0.png);
+}
+.-icon.-extlink {
+	background-image: url(../res/externalLink-0e493.png);
+}
+.-icon.-extlink.-dark {
+	background-image: url(../res/external-link-b22bb.png);
+}
+.-icon.-help {
+	background-image: url(../res/help.png);
+}
+.-icon.-menu {
+	background-image: url(../res/menu.png);
+}
+.-icon.-save {
+	background-image: url(../res/Save-72f24.png);
+}

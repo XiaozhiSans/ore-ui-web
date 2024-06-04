@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Minecraft Ten";
+	src: url(../fonts/minecraft-ten.ttf) format(truetype);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Mojangles;
+	src: url(../fonts/Mojangles.ttf) format(truetype);
+	font-weight: normal;
+}
