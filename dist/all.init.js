@@ -5,10 +5,10 @@
  */
 import cfg from "./oreuicfg.json" with {type:"json"};
 import {info} from "./libs/info.js";
-import {sounds, playSound} from "./libs/sounds.js";
+import {Sounds, playSound} from "./libs/sounds.js";
 import {oreui} from "./libs/main.js";
 
-globalThis.playSound = playSound, globalThis.sounds = sounds;
+globalThis.playSound = playSound, globalThis.sounds = new Sounds(cfg.path);
 
 globalThis.oreui = {
 	main: oreui,
