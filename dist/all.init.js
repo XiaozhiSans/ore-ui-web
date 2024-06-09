@@ -3,11 +3,10 @@
  * license: cc by-nc-sa 4.0
  * code by XiaozhiSans
  */
-import data from "./oreuicfg.json" with {type:"json"};
+import cfg from "./oreuicfg.json" with {type:"json"};
 import {info} from "./libs/info.js";
 import {sounds, playSound} from "./libs/sounds.js";
 import {oreui} from "./libs/main.js";
-const cfg = data;
 
 globalThis.playSound = playSound, globalThis.sounds = sounds;
 

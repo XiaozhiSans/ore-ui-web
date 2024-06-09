@@ -1,8 +1,9 @@
 {
-	"path": "dist/",
+	"path": "https://xiaozhisans.off.pw/ore-ui-web/dist/",
+	"部署本地请修改为`你的域名/{oreui路径}/dist/`": 0,
 	"button_click_sound": true,
-	"comment": "点击按钮音效,开启后给`:not(.--no-click-sound, .-nocs)`以及非顶栏按钮添加`sounds.click`点击音效",
+	"点击按钮音效,开启后给`:not(.--no-click-sound, .-nocs)`以及非顶栏按钮添加`sounds.click`点击音效": 0,
 	"check_update": false,
-	"comment_0": "还没写,不管改成什么都不会工作(",
-	"comment_1": "你问我为什么这么写注释?es6的json模块太严了,不许注释,就只能这么写咯 (￣▽￣)\""
+	"还没写,不管改成什么都不会工作(": 0,
+	"你问我为什么这么写注释?es6的json模块太严了,不许注释,就只能这么写咯 (￣▽￣)\"": 0
 }

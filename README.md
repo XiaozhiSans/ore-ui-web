@@ -1,6 +1,6 @@
 <div align="right">
 
-[简体中文](README-sch.md) | English
+[简体中文](README-zh.md) | English
 
 <sup>language translations may not be 100% acc</sup>
 

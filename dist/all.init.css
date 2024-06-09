@@ -1,4 +1,5 @@
-@import url(./libs/fonts.css);
+/* @import url(./libs/fonts.css); */
+@import url(https://cdn.jsdelivr.net/gh/XiaozhiSans/ore-ui-web/dist/libs/fonts.css);
 @import url(./libs/icons.css);
 @import url(./libs/images.css);
 @import url(./libs/main.css);
