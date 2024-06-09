@@ -5,18 +5,15 @@
  */
 import cfg from "./oreuicfg.json" with {type:"json"};
 import {info} from "./libs/info.js";
-
-globalThis.oreui = {
-	main: oreui,
-	info: info,
-	path: cfg.path
-}
-
 import {sounds, playSound} from "./libs/sounds.js";
 import {oreui} from "./libs/main.js";
 
 globalThis.playSound = playSound, globalThis.sounds = sounds;
 
+globalThis.oreui = {
+	main: oreui,
+	info: info
+}
 
 document.addEventListener("DOMContentLoaded", () => {
 	try {
