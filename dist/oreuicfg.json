@@ -1,5 +1,5 @@
 {
-	"path": "https://xiaozhisans.off.pw/ore-ui-web/dist/",
+	"path": "https://xsawa.dev.tc/ore-ui-web/dist/",
 	"部署本地请修改为`你的域名/{oreui路径}/dist/`": 0,
 	"button_click_sound": true,
 	"点击按钮音效,开启后给`:not(.--no-click-sound, .-nocs)`以及非顶栏按钮添加`sounds.click`点击音效": 0,
